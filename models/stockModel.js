@@ -6,9 +6,9 @@ var stockSchema = new Schema({
         type:String,
         required:[true]
     },
-    stocks:{
-        type:[String]
-    }
+    stocks:[{
+        stock:String
+    }]
 });
 
 var Stocks = mongoose.model('stock', stockSchema);

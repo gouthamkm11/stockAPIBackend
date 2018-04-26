@@ -1,7 +1,7 @@
 var User = require('../models/userModel');
 var Stock = require('../models/stockModel');
 var Ownedstk = require('../models/ownedstockModel');
-var Account = require('../models/accounrModel');
+var Account = require('../models/accountModel');
 
 module.exports = function(app){
     app.get('/api/userData', (req,res)=>{
@@ -23,7 +23,7 @@ module.exports = function(app){
     })
 
     app.get('/api/accountData',(req,res)=>{
-        Account.findOne({"googleID":12}).then((result)=>{
+        Account.findOne({"googleID":14}).then((result)=>{
             res.send(result);
         })
     })
