@@ -20,9 +20,9 @@ module.exports = function(app){
                         res.send(newRecord);
                     });
                 }
-            else{
-                //Add the new user into the DB.
-            }
+            // else{
+            //     //Add the new user into the DB.
+            // }
         })
     })
 

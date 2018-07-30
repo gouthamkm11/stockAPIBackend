@@ -26,9 +26,9 @@ app.use(function(req,res,next){
 getRoutes(app);
 postRoutes(app);
 //Initial route configuration
-app.get('/', (req,res)=>{
-    res.send('Home Page');
-})
+// app.get('/', (req,res)=>{
+//     res.send('Home Page');
+// })
 
 //Second Middlewate - For error handling
 app.use(function(err,req,res,next){
